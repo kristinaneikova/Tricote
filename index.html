@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tricoté | Ръчно плетени чанти, играчки и ключодържатели</title>
+  <meta name="description" content="Tricoté: ръчно плетени чанти, играчки и ключодържатели с български произход.">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Prata&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+
+  <main id="main" tabindex="-1">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <span class="tag">Нова колекция · 2026</span>
+          <h1>Ръчно плетено,<br>бримка по бримка.</h1>
+          <p class="lead">Чанти, играчки и ключодържатели, изплетени на ръка в България. Всяко изделие е малко по-различно от другото.</p>
+          <div class="ctas">
+            <a class="btn" href="shop.html">Разгледай магазина</a>
+            <a class="btn ghost" href="custom.html">Персонализирана поръчка</a>
+          </div>
+        </div>
+        <div class="collage">
+          <a href="product.html?id=roza" aria-label="Чанта „Роза“" data-art="roza"></a>
+          <a href="product.html?id=ema" aria-label="Зайчето Ема" data-art="ema"></a>
+          <a href="product.html?id=yagodka" aria-label="Ключодържател „Ягодка“" data-art="yagodka"></a>
+          <a href="product.html?id=luna" aria-label="Чанта „Луна“" data-art="luna"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Категории</h2>
+          <p class="muted" style="max-width:380px">Три малки семейства, изплетени със същата кука и много търпение.</p>
+        </div>
+        <div class="grid g3">
+          <a class="cat" href="shop.html?cat=bags">
+            <div class="art" data-art="roza"></div>
+            <div class="row"><div><h3>Чанти</h3><p>Тоут чанти, през рамо и мини портмонета</p></div><span class="arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="cat" href="shop.html?cat=toys">
+            <div class="art" data-art="ema"></div>
+            <div class="row"><div><h3>Играчки</h3><p>Меки амигуруми приятели за гушкане</p></div><span class="arrow" aria-hidden="true">→</span></div>
+          </a>
+          <a class="cat" href="shop.html?cat=keychains">
+            <div class="art" data-art="yagodka"></div>
+            <div class="row"><div><h3>Ключодържатели</h3><p>Малки плетени талисмани</p></div><span class="arrow" aria-hidden="true">→</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="sec-head">
+          <h2>Нови и намалени</h2>
+          <a href="shop.html" style="font-weight:600">Виж всички продукти →</a>
+        </div>
+        <div class="grid g4" data-products="new"></div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="stack gap8"><span class="eyebrow">Визии</span><h2>Как да носите плетена чанта</h2></div>
+          <a href="lookbook.html" style="font-weight:600">Всички визии →</a>
+        </div>
+        <div class="grid g3" data-looks="teaser"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="cta">
+          <div>
+            <h2>Искате нещо специално?</h2>
+            <p>Изберете цветове, размер или име, което да изплетем. Изработваме по вашите изисквания.</p>
+          </div>
+          <a class="btn light" href="custom.html">Направи персонализирана поръчка</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <div class="sec-head"><h2>Отзиви от клиенти</h2></div>
+        <div data-reviews="latest"></div>
+      </div>
+    </section>
+
+    <section style="text-align:center">
+      <div class="wrap">
+        <h2 style="font-size:36px">Клуб на преждата</h2>
+        <p class="muted" style="margin-top:10px">Нови модели и намаления, директно в имейла ви.</p>
+        <form class="newsletter" data-form="newsletter" novalidate>
+          <label class="sr" for="nl">Имейл адрес</label>
+          <input class="input" id="nl" type="email" name="email" placeholder="вашият@имейл.bg" required autocomplete="email">
+          <button class="btn" type="submit">Абонирай се</button>
+        </form>
+        <p id="nlMsg" style="margin-top:12px;font-weight:600" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>

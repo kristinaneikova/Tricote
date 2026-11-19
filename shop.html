@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Магазин | Tricoté</title>
+  <meta name="description" content="Всички ръчно плетени продукти на Tricoté: чанти, играчки и ключодържатели.">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Prata&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="shop">
+  <div id="site-header"></div>
+
+  <main id="main" tabindex="-1">
+    <section class="page-top">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="stack gap8"><span class="eyebrow">Магазин</span><h1 id="shopTitle">Всички продукти</h1></div>
+          <p class="muted">Наличността се обновява след всяка поръчка.</p>
+        </div>
+
+        <div class="filters">
+          <div class="pills">
+            <a class="pill" href="shop.html" data-cat="all">Всички</a>
+            <a class="pill" href="shop.html?cat=bags" data-cat="bags">Чанти</a>
+            <a class="pill" href="shop.html?cat=toys" data-cat="toys">Играчки</a>
+            <a class="pill" href="shop.html?cat=keychains" data-cat="keychains">Ключодържатели</a>
+          </div>
+          <div class="tools">
+            <div class="search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+              <label class="sr" for="q">Търсене</label>
+              <input id="q" type="search" placeholder="Търсене..." data-shop="q">
+            </div>
+            <label class="chk"><input type="checkbox" data-shop="inStock">Само налични</label>
+            <label class="sr" for="sort">Подреди</label>
+            <select id="sort" class="sort" data-shop="sort">
+              <option value="featured">Препоръчани</option>
+              <option value="asc">Цена: ниска към висока</option>
+              <option value="desc">Цена: висока към ниска</option>
+              <option value="new">Първо новите</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="shopGrid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>

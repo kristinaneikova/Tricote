@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Поръчка | Tricoté</title>
+  <meta name="description" content="Завършване на поръчката в Tricoté.">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Prata&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="checkout">
+  <div id="site-header"></div>
+
+  <main id="main" tabindex="-1">
+    <section class="page-top">
+      <div class="wrap" id="checkoutWrap">
+        <h1 style="font-size:clamp(34px,4.5vw,48px);margin-bottom:28px">Завършване на поръчката</h1>
+        <div class="checkout-grid">
+          <form class="box" data-form="checkout" novalidate>
+            <div class="fields" style="gap:24px">
+              <fieldset>
+                <legend class="big">Данни за контакт</legend>
+                <div class="grid g2" style="gap:14px">
+                  <label class="f">Име и фамилия<input class="input" name="name" required autocomplete="name"><span class="err">Въведете име.</span></label>
+                  <label class="f">Телефон<input class="input" type="tel" name="phone" required autocomplete="tel"><span class="err">Въведете телефон.</span></label>
+                </div>
+                <label class="f" style="margin-top:14px">Имейл<input class="input" type="email" name="email" required autocomplete="email"><span class="err">Въведете валиден имейл.</span></label>
+              </fieldset>
+
+              <fieldset>
+                <legend class="big">Доставка</legend>
+                <div class="opts">
+                  <label class="opt"><input type="radio" name="ship" value="econt" checked>До офис на Еконт · 3,50 €</label>
+                  <label class="opt"><input type="radio" name="ship" value="speedy">До офис на Спиди · 3,50 €</label>
+                  <label class="opt"><input type="radio" name="ship" value="address">До адрес · 5,50 €</label>
+                </div>
+                <div class="grid g2" style="gap:14px;margin-top:14px">
+                  <label class="f">Град<input class="input" name="city" required autocomplete="address-level2"><span class="err">Въведете град.</span></label>
+                  <label class="f"><span id="addrLabel">Офис на куриера</span><input class="input" name="addr" required><span class="err">Попълнете това поле.</span></label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend class="big">Плащане</legend>
+                <div class="opts">
+                  <label class="opt"><input type="radio" name="pay" value="Наложен платеж" checked>Наложен платеж</label>
+                  <label class="opt"><input type="radio" name="pay" value="Карта">Карта</label>
+                </div>
+                <p class="note" style="margin-top:8px">В прототипа плащането не е свързано с банка.</p>
+              </fieldset>
+
+              <label class="f">Бележка към поръчката (по желание)<textarea class="input" name="note" style="min-height:80px"></textarea></label>
+              <label class="chk" style="font-weight:500"><input type="checkbox" name="terms" required>Съгласен/на съм с общите условия</label>
+              <span class="err" id="termsErr">Трябва да приемете общите условия.</span>
+              <button class="btn block" type="submit">Потвърди поръчката</button>
+            </div>
+          </form>
+          <aside class="box stack gap16" id="coSummary" aria-label="Обобщение на поръчката"></aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>

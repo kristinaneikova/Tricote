@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакт | Tricoté</title>
+  <meta name="description" content="Свържете се с Tricoté: въпроси за продукти, поръчки и доставка.">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Prata&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+
+  <main id="main" tabindex="-1">
+    <section class="page-top">
+      <div class="wrap">
+        <div class="grid g2" style="gap:56px;align-items:start">
+          <div class="stack gap16">
+            <span class="eyebrow">Обратна връзка</span>
+            <h1 style="font-size:clamp(34px,4.5vw,48px)">Свържете се с нас</h1>
+            <p style="font-size:18px">Въпрос за продукт, поръчка или доставка? Пишете ни и ще отговорим възможно най-скоро.</p>
+            <div class="box stack gap8">
+              <span>Имейл: [ИМЕЙЛ]</span>
+              <span>Телефон: [ТЕЛЕФОН]</span>
+              <span>Instagram: [@ПРОФИЛ]</span>
+            </div>
+            <div class="stack gap8">
+              <h2 style="font-size:22px">Доставка и връщане</h2>
+              <p class="muted">Доставка с куриер до офис или адрес. Безплатна доставка над 60 €. [УСЛОВИЯ ЗА ВРЪЩАНЕ]</p>
+            </div>
+          </div>
+
+          <div id="contactWrap">
+            <form class="box" data-form="contact" novalidate>
+              <div class="fields">
+                <div class="grid g2" style="gap:14px">
+                  <label class="f">Име<input class="input" name="name" required autocomplete="name"><span class="err">Въведете име.</span></label>
+                  <label class="f">Имейл<input class="input" type="email" name="email" required autocomplete="email"><span class="err">Въведете валиден имейл.</span></label>
+                </div>
+                <label class="f">Тема
+                  <select class="input" name="topic">
+                    <option>Общ въпрос</option>
+                    <option>Въпрос за поръчка</option>
+                    <option>Доставка и връщане</option>
+                    <option>Сътрудничество</option>
+                  </select>
+                </label>
+                <label class="f">Съобщение<textarea class="input" name="msg" required></textarea><span class="err">Напишете съобщение.</span></label>
+                <button class="btn" type="submit" style="justify-self:start">Изпрати</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="app.js"></script>
+</body>
+</html>
